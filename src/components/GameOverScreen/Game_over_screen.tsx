@@ -23,7 +23,7 @@ export default function GameOverScreen({  onRestart, handleBackToGame}:GameOverS
     }
 
     try {
-      const response = await fetch('http://localhost:3000/newUserScore', {
+      const response = await fetch('https://snake-server-lg15.onrender.com/newUserScore', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

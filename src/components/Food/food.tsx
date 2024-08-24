@@ -16,9 +16,9 @@ const isFoodOnSnake = (foodPosition: Coordinate, snake: Coordinate[]): boolean =
 
 export default function Food(props: FoodProps) {
     const { position, cellSize, snake } = props;
-    let positionIn:Coordinate;
+
     if (isFoodOnSnake(position, snake)) {
-      positionIn = getRandomFood();     
+    getRandomFood();     
     }
 
     return (
