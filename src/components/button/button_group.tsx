@@ -12,7 +12,6 @@ export default function ButtonGroup({ onStart, onRecords, }: ButtonGroupProps) {
     <div className="button_group">
       <StartButton onStart={onStart} text="Start Game" size="small" />
       <StartButton onStart={onRecords} text="Records" size="small" />
-
     </div>
   );
 }

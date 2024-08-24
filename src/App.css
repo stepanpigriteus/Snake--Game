@@ -148,7 +148,7 @@
 
 .inputName {
   background-color: rgba(255, 255, 255, 0.872);
-  max-width: 7rem;
+  max-width: 8rem;
   outline: 5px outset #4f0909c7; 
   box-shadow: 0 0 0 2.5px rgba(255, 255, 255, 0.561); 
 }

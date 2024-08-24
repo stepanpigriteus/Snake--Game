@@ -13,10 +13,7 @@ export default function GameOverScreen({  onRestart, handleBackToGame}:GameOverS
   const [send, setSendResult] = useState<boolean>(false);
 
   let score:number = 0;
-
   const handleSubmit = async () => {
-
-
     if (name.trim() === '' || score == null) {
       alert('Please enter a name and ensure the score is valid.');
       return;
@@ -30,7 +27,6 @@ export default function GameOverScreen({  onRestart, handleBackToGame}:GameOverS
         },
         body: JSON.stringify({ name, score: localStorage.getItem('currentScore') }),
       });
-
       if (!response.ok) {
         throw new Error('Failed to save score');
       }

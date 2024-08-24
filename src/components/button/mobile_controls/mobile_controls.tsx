@@ -4,10 +4,7 @@ interface ControlButtonsProps {
     onDirectionChange: (direction: { x: number; y: number }) => void;
   }
 
-
-
 export default function MobileControls({onDirectionChange}:ControlButtonsProps) {
-    
     return(
         <div className="control_buttons">
             

@@ -11,7 +11,6 @@ export interface ScoreTableElement {
   score: number;
 }
 
-
 function App() {
   const [gameStarted, setGameStarted] = useState<boolean>(false);
   const [gameOver, setGameOver] = useState<boolean>(false);
@@ -46,7 +45,6 @@ function App() {
             <StartButton onStart={handleBackToGame} text="Back" size="small" />
           </div>
         );
-
       case gameStarted && gameOver:
         return (
           <GameOverScreen
@@ -54,14 +52,10 @@ function App() {
             handleBackToGame={handleBackToGame}
           />
         );
-
       case gameStarted:
         return <>
-     
-
         <SnakeOne onGameOver={handleGameOver} onBack={handleBackToGame} autoPlayMusic={gameStarted} />
         </>;
-
       default:
         return (
           <ButtonGroup onStart={handleStart} onRecords={handleRecords} onPause={handleStart} />

@@ -19,14 +19,11 @@
   text-align: left;
   padding-bottom: 0.1rem;
   border: none; 
-  
 }
 
 .table_parent th {
   background-color: rgba(255, 255, 255, 0.342); 
   font-size: 0.7rem;
-
-
 }
 
 .table_parent td:nth-child(2) {

@@ -5,8 +5,7 @@
     max-height: 400px;
     z-index: 7;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
-
-  } 
+} 
 
 .control_buttons button:first-child {
     margin: 0 30%;
