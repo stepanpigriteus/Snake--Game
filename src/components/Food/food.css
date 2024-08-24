@@ -1,0 +1,47 @@
+.food {
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: pulse 0.9s infinite;
+    box-shadow: 0 0 10px rgba(255, 47, 47, 0.426); 
+  }
+  
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(0.95); 
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .food::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400%; 
+    height: 400%; 
+    background: radial-gradient(circle, rgba(214, 241, 4, 0.5) 0%, rgba(255,255,255,) 80%);
+    transform: translate(-50%, -50%);
+    animation: wave 1.5s infinite;
+  }
+
+  @keyframes wave {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(1.5);
+    }
+  }

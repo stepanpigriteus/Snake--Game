@@ -1,0 +1,47 @@
+.control_buttons {
+    position: relative;
+    top: 5%;
+    max-width: 400px;
+    max-height: 400px;
+    z-index: 7;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+
+  } 
+
+.control_buttons button:first-child {
+    margin: 0 30%;
+}
+
+.control_buttons button:nth-child(2) {
+    margin: 0 13% 0;
+}
+
+.control_buttons button:nth-child(3) {
+    margin: 0 13% 0 ;
+}
+  
+.control_buttons * {
+    background-color: rgba(255, 255, 255, 0.853);
+    border: 5px solid black;
+    color: rgb(0, 0, 0);
+    width: 4.2rem;
+    height: 4.2rem;
+    padding: 0;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive; 
+    font-size: 1rem;
+    margin: 0.4rem 2rem;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 0.3rem 1rem rgba(202, 202, 202, 0.4); 
+    transform: translateY(-6px); 
+  }
+
+.control_buttons *:hover {
+    border: 5px solid rgb(176, 0, 0);
+
+}
+.control_buttons *:active {
+    background-color: #000000;
+    color:rgb(176, 0, 0);
+  }

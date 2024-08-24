@@ -1,0 +1,198 @@
+#root {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  display: flex;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.view_container {
+  position: relative;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: url('../public/XUE0EGJY_output_0.jpeg') no-repeat center center;
+  background-size: cover;
+  transition: background-color 0.5s ease;
+}
+
+@media(max-width: 450px) {
+  .view_container {
+    background: url('../public/wide-long-shit.jpeg') no-repeat center bottom;
+    background-size: 290%;
+  }
+
+}
+
+
+.view_container.darkened::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1; 
+  transition: opacity 0.5s ease; 
+}
+
+.start_button {
+
+  max-width: 200px;
+  z-index: 10;
+  font-size: 1.5em;
+  background-color: #2f2f2f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); 
+  font-family: 'Press Start 2P', cursive; 
+  font-size: 1rem;
+  transform: scaleY(1.7);
+}
+
+.start_button:hover {
+  background-color: #c70039;
+}
+
+.button_container {
+  min-width: 310px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.7rem;
+  padding: 0 0;
+}
+
+.btn-small {
+  font-size: 0.75rem;
+  margin-top: 5rem;
+}
+
+.btn-medium {
+  font-size: 16px;
+}
+
+.btn-large {
+  font-size: 20px;
+}
+
+
+.game_over{
+  position: relative;
+  bottom: 15%;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-content:center ;
+  margin-bottom: 1.4rem;
+}
+
+.game_over_buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  top: 15%;
+
+}
+.game_over_buttons * {
+  margin: 0.8rem auto;
+  z-index: 10;
+  font-family: 'Press Start 2P', cursive; 
+  font-size: 0.5rem;
+  transform: scaleY(1.7);
+  padding: 0.5rem
+}
+
+
+.inputName {
+  background-color: rgba(255, 255, 255, 0.872);
+  max-width: 7rem;
+  outline: 5px outset #4f0909c7; 
+  box-shadow: 0 0 0 2.5px rgba(255, 255, 255, 0.561); 
+}
+
+.send_button {
+  width: fit-content;
+  height: fit-content;
+  padding: 0;
+  text-align: center;
+  padding: 0.2rem;
+}
+
+@keyframes blinkShadow {
+  0%, 100% {
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #4f0909c7, 0 0 40px #ff00ff;
+  }
+  50% {
+    text-shadow: none;
+  }
+}
+
+.game_over h2 {
+  color: #ffffff;
+  margin-bottom: 4rem;
+  font-family: 'Press Start 2P', cursive; 
+  font-size: 0.52rem;
+  transform: scaleY(2.6);
+  padding: 0.5rem;
+  z-index: 10;
+  animation: blinkShadow 1s infinite;
+}
+
+.back_button {
+    max-height: 2rem ;
+    padding: 0 1rem;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgb(28, 28, 28);
+    border-radius: 5px;
+    font-family: 'Press Start 2P', cursive; 
+    font-size: 0.6rem;
+    transform: scaleY(1.7);
+    z-index: 2;
+    line-height: 2rem;
+    margin: 0.4rem 0 0;
+    background-color: #2f2f2f;
+}
