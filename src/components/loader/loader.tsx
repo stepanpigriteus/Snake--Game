@@ -5,7 +5,7 @@ export default function Loader() {
         <>
 
         <div className="snake_loader">
-        <div className="snake_in_loader">
+            <div className="snake_in_loader">
                  <div id="target_in_loader"></div>
                 <div className="segment_in_loader"></div> 
                 <div className="segment_in_loader"></div>

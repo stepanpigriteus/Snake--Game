@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     height: 100px;
+    margin-left: -2rem;
   }
   
   .snake_in_loader {

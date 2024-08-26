@@ -7,6 +7,7 @@ import ButtonGroup from './components/button/button_group';
 import GameOverScreen from './components/GameOverScreen/Game_over_screen';
 
 
+
 export interface ScoreTableElement {
   name: string;
   score: number;
@@ -61,7 +62,9 @@ function App() {
         </>;
       default:
         return (
+          <>
           <ButtonGroup onStart={handleStart} onRecords={handleRecords} onPause={handleStart} />
+          </>
         );
     }
   };
