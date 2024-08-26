@@ -32,6 +32,8 @@ export default function ScoreTable() {
     return <Loader/>; 
   }
   return (
+    <>
+    <h2 className='game_over_h2'> Top "Snake masters"</h2>
     <table className="table_parent">
       <thead >
         <tr className="table_thread">
@@ -48,6 +50,7 @@ export default function ScoreTable() {
         ))}
       </tbody>
     </table>
+    </>
   );
   
 }

@@ -55,7 +55,6 @@ export default function GameOverScreen({  onRestart, handleBackToGame}:GameOverS
 
   return (
     <div className='game_over'>
-      <h2> Top "Snake masters"</h2>
       <ScoreTable />
       <div className='game_over_buttons'>
       <StartButton onStart={onRestart} text="Restart Game" size="small" />

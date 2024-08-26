@@ -43,7 +43,6 @@ function App() {
         return (
           <div className="records_container">
             <div className={"view_container darkened"}>
-            <h2 className='game_over_h2'> Top "Snake masters"</h2>
             <ScoreTable />
             <StartButton onStart={handleBackToGame} text="Back" size="small" />
             </div>
