@@ -5,7 +5,7 @@ import StartButton from './components/button/start_button';
 import ScoreTable from './components/score_table/score_table';
 import ButtonGroup from './components/button/button_group';
 import GameOverScreen from './components/GameOverScreen/Game_over_screen';
-import Loader from './components/loader/loader';
+
 
 export interface ScoreTableElement {
   name: string;
