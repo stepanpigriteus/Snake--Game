@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import './score_table.css';
+import Loader from '../loader/loader';
 
 interface ScoreTableElement {
   name: string;
@@ -8,16 +9,28 @@ interface ScoreTableElement {
 
 export default function ScoreTable() {
   const [data, setData] = useState<ScoreTableElement[]>([]);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch('https://snake-server-lg15.onrender.com/score');
-      const result: ScoreTableElement[] = await response.json();
-      setData(result);
+      setIsLoading(true);
+      try {
+        const response = await fetch('https://snake-server-lg15.onrender.com/score');
+        const result: ScoreTableElement[] = await response.json();
+        setData(result);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      } finally {
+        setIsLoading(false);
+      }
     };
 
     fetchData();
   }, []);
+
+  if (isLoading) {
+    return <Loader/>; 
+  }
   return (
     <table className="table_parent">
       <thead >
